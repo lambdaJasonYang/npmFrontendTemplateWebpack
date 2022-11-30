@@ -3,7 +3,11 @@
 ## Summary
 
 * Write our code in the `src` folder. 
-* Webpack will build our js and types to the `lib` folder and the htmlplugin generates a html file in the `lib/demo` folder to demo our library on the browser.  * On publish, we simply delete the `lib/demo` folder and publish the rest of the `lib` folder.  
+* Webpack will build our js and types to the `lib` folder and the htmlplugin generates a html file in the `lib/demo` folder to demo our library on the browser. 
+* On publish, we simply delete the `lib/demo` folder and publish the rest of the `lib` folder.  
+
+The brother repo is [https://github.com/userJY/npmPackageTypeDoc_demo](https://github.com/userJY/npmPackageTypeDoc_demo) which does not use webpack.  
+But why use webpack? To understand look at the other repo; requires us to create 2 npm projects: 1 for client to demo the library, 1 for the library itself. We also have to use `npm link` and later unlink it. It's a hassle compared to this repo.
 
 ## To run
 
