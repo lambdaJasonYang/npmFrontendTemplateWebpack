@@ -29,7 +29,7 @@ module.exports = {
                 exclude: [/node_modules/]
             },
             {
-                test: /\.s[ac]ss$/i, //regex to detect sass file
+                test: /\.s?[ac]ss$/i, //regex to detect sass file
                 use: ['style-loader','css-loader','sass-loader']
             },
             {
