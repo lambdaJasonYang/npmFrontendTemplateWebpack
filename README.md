@@ -133,3 +133,8 @@ tsconfig.json
 
 }
 ```
+
+## using CSS styles
+
+* drag your uplot.css file into src/styles folder
+* in your index.ts add `import './styles/uPlot.css';`
