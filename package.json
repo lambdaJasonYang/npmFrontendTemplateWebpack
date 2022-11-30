@@ -1,0 +1,41 @@
+{
+  "name": "mywebpacknpmpackagedemo",
+  "version": "1.0.4",
+  "description": "",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "dclean": "rm -rf docs",
+    "doc": "rm -rf docs && typedoc --entryPointStrategy resolve ./src/index.ts",
+    "dev": "npm run clean && webpack && webpack serve --https",
+    "clean": "tsc --build --clean",
+    "pub" : "npm run build && rm -rf lib/demo && npm run doc && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "UserJY",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@types/node": "^18.11.9",
+    "@types/webpack": "^5.28.0",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "typedoc-plugin-missing-exports": "^1.0.0",
+    "typedoc-umlclass": "^0.7.0",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
