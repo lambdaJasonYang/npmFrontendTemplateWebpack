@@ -3,8 +3,7 @@
 ## Summary
 
 * Write our code in the `src` folder. 
-* Webpack will build our js and types to the `lib` folder and the htmlplugin generate a html file in the `lib/demo` folder to run our library on the browser.  
-* On publish, we simply delete the `lib/demo` folder and publish the rest of the `lib` folder.  
+* Webpack will build our js and types to the `lib` folder and the htmlplugin generates a html file in the `lib/demo` folder to demo our library on the browser.  * On publish, we simply delete the `lib/demo` folder and publish the rest of the `lib` folder.  
 
 ## To run
 
