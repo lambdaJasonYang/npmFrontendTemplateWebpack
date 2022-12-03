@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
         /* Basics */
-    "outDir": "./lib", /* output dir of emitted js files */
+    "outDir": "./dist", /* output dir of emitted js files */
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
@@ -71,7 +71,7 @@
 
   //Generally, include source directory; exclude distribution directory
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"], /* Specifies an array of filenames or patterns to include in the program. */
-  "exclude": ["lib","node_modules", "doc", "jest.config.ts", "**/*.spec.ts"]  /* Specifies an array of filenames or patterns that should be skipped when resolving "include":[..] above */
+  "exclude": ["dist","node_modules", "doc", "jest.config.ts", "**/*.spec.ts"]  /* Specifies an array of filenames or patterns that should be skipped when resolving "include":[..] above */
 
 }
 

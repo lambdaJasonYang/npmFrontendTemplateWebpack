@@ -3,8 +3,8 @@
 ## Summary
 
 * Write our code in the `src` folder. 
-* Webpack will build our js and types to the `lib` folder and the htmlplugin generates a html file in the `lib/demo` folder to demo our library on the browser. 
-* On publish, we simply delete the `lib/demo` folder and publish the rest of the `lib` folder.  
+* Webpack will build our js and types to the `dist` folder and the htmlplugin generates a html file in the `dist/demo` folder to demo our library on the browser. 
+* On publish, we simply delete the `dist/demo` folder and publish the rest of the `dist` folder.  
 
 The brother repo is [https://github.com/userJY/npmPackageTypeDoc_demo](https://github.com/userJY/npmPackageTypeDoc_demo) which instead uses Storybook.   
 Another barebones alternative is to create 2 npm projects: 1 for client to demo the library, 1 for the library itself, `npm link`.
@@ -25,10 +25,10 @@ npm run pub
 package.json
 
 ```json
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "webpack",

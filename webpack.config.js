@@ -12,7 +12,7 @@ module.exports = {
         
     },
     output: {
-        path: path.resolve(__dirname, 'lib'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'index.js', //[name] takes up the `bundle` key string
         clean: true,
         assetModuleFilename: '[name][ext]'
@@ -51,7 +51,7 @@ module.exports = {
     plugins : [
         new HTMLWebpackPlugin({
             bleh: "Webpack App",
-            filename: path.resolve('lib', 'demo','index.html'),
+            filename: path.resolve('dist', 'demo','index.html'),
             template: path.resolve('src','template.html') //you can omit this but index.html can't be customized to your liking
         }),
         new CopyPlugin({
@@ -63,7 +63,7 @@ module.exports = {
     ],
     devServer: {
         static: {
-            directory: path.resolve(__dirname,'lib', 'demo')
+            directory: path.resolve(__dirname,'dist', 'demo')
         },
         port: 5555,
         open: false,
