@@ -12,5 +12,14 @@
     <p>Webpack App</p>
     <div id="sigma-container" style="height: 50vh;width: 70vw;"></div>
     <div id="sigma-container2" style="height: 50vh;width: 70vw;"></div>
+    <div id="target" ></div>
 </body>
+    <script>
+        //Demo your library inside window.onload
+        window.onload = ()=>{
+            var target = document.getElementById("target");
+            //modDom is a function we exported
+            mylib.modDom(target);
+            };
+    </script>
 </html>

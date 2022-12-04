@@ -17,4 +17,16 @@ class bob implements bobby {
         this.mode = x;
     }
 }
-export {sayhello, d, dd, bob};
+
+const modDom = (target: HTMLCanvasElement) => {
+    
+    const source = document.createElement('canvas')
+    source.width = 400;
+    source.height = 400;
+    source.getContext("2d").fillRect(20,20,150,150)
+    //`target = source` does not work 
+    //`Object.assign(target,source)` does not work
+    target.replaceWith(source);
+        
+}
+export {modDom, sayhello, d, dd, bob};

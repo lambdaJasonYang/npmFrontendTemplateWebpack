@@ -13,7 +13,7 @@
     "cleandist": "tsc --build --clean",
     "cleandocs": "rm -rf docs",
     "docs": "typedoc --options typedoc.json",
-    "dev": "npm run clean && webpack && webpack serve --https",
+    "dev": "npm run clean && webpack && webpack serve",
     "pub" : "npm run build && rm -rf dist/demo && npm run doc && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

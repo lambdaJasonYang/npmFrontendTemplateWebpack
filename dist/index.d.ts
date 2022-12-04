@@ -8,4 +8,5 @@ declare class bob implements bobby {
     mode: string;
     constructor(x: string);
 }
-export { sayhello, d, dd, bob };
+declare const modDom: (target: HTMLCanvasElement) => void;
+export { modDom, sayhello, d, dd, bob };

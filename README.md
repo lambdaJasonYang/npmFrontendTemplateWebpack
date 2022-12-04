@@ -2,9 +2,12 @@
 
 ## Summary
 
-* Write our code in the `src` folder. 
-* Webpack will build our js and types to the `dist` folder and the htmlplugin generates a html file in the `dist/demo` folder to demo our library on the browser. 
-* On publish, we simply delete the `dist/demo` folder and publish the rest of the `dist` folder.  
+1. Write our code in the `src` folder. 
+2. `npm build`: Webpack will build our js and types to the `dist` folder and the htmlplugin generates a html file in the `dist/demo` folder to demo our library on the browser. 
+3. In the `src/template.html` demo the library in the window.onload area using `mylib.somefunction`. (the name "mylib" is set in webpack output library.name option)
+   * `npm run dev` to demo
+4. On publish, we simply delete the `dist/demo` folder and publish the rest of the `dist` folder.  
+5. In production, Install as npm package, and simply `import { somefunction } from 'packagename'` .   (note: the name "mylib" is never used when installed as npm package)
 
 The brother repo is [https://github.com/userJY/npmPackageTypeDoc_demo](https://github.com/userJY/npmPackageTypeDoc_demo) which instead uses Storybook.   
 Another barebones alternative is to create 2 npm projects: 1 for client to demo the library, 1 for the library itself, `npm link`.

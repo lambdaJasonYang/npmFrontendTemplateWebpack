@@ -15,7 +15,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js', //[name] takes up the `bundle` key string
         clean: true,
-        assetModuleFilename: '[name][ext]'
+        assetModuleFilename: '[name][ext]',
+        library: { name: 'mylib',
+                   type: 'window'
+                 },
     },
     resolve: {
         extensions: [".ts",".js",'...'],
